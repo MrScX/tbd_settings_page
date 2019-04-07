@@ -1,0 +1,32 @@
+
+.content-container{
+    background: $dark-background;
+    padding: 1rem 1rem;
+    margin-top: 4rem;
+}
+
+.main-header{
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: $teal;
+    padding-left: 1rem;
+
+    @media only screen and (max-width: 500px){
+        justify-content: center;
+    }
+    
+    &--icon{
+        color: $link-color;
+        font-size: 2.8rem;
+        margin-right: 0.8rem;
+    }
+
+    &--title{
+        display: inline-block;
+        color: $pure-white;
+        font-size: 2.4rem;
+    }
+    
+}

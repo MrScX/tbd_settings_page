@@ -1,0 +1,60 @@
+
+.tabs{
+    background: $dark-background;
+    width: 100%;
+}
+
+.tabs .tab a.active{
+    color: $tabs-color;
+}
+
+.tabs .tab a {
+    color: $tabs-color;
+    /*Custom Text Color*/
+}
+  
+.tabs .tab a:hover {
+    color: $tabs-color-dark;
+    /*Custom Color On Hover*/
+}
+
+.tabs .tab a:focus.active {
+
+    color: $tabs-color;
+    /*Custom Text Color While Active*/
+    background-color: transparent;
+    /*Custom Background Color While Active*/
+}
+  
+.tabs .indicator {
+    background-color: $tabs-color;
+    /*Custom Color Of Indicator*/
+}
+
+// Select Field
+
+.select-wrapper input.select-dropdown{
+    
+    border-bottom: 1px solid #00acc1;
+
+    &:focus{
+        border-bottom: 1px solid #26a69a;
+        box-shadow: 0 1px 0 0 #26a69a;
+    }
+}
+
+.dropdown-content li>a, .dropdown-content li>span{
+    color: $link-color;
+}
+
+.dropdown-content{
+    background: lighten($color: $dark-background, $amount: 10%);
+}
+
+.select-wrapper .caret{
+    fill: $link-color;
+}
+
+.fields-label--p{
+    
+}

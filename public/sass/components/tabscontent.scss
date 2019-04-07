@@ -1,0 +1,19 @@
+.profile-tab-content{
+    margin-top: 8rem;
+}
+
+// profile box
+.profile-picture-box{
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &--input{
+        margin: 0 2rem;
+    }
+
+    &--img{
+        width: 35%;
+    }
+}

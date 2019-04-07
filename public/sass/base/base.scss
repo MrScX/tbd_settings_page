@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: open sans,sans-serif;
+    font-size: 1.6rem;
+    position: relative;
+    color: $text-color;
+
+    background: #212328;
+}
+
+.paral-flex-box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}

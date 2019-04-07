@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./public/css/style.css">
+
+    <title>TBD Settings Page</title>
+
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+            <div class="row content-container z-depth-2">
+
+                <div class="main-header">
+                    <i class="material-icons main-header--icon">settings</i>
+                    <h3 class="main-header--title">Account Settings</h3>
+                </div>
+
+                <div class="settings-tabs">
+                    <div class="col s12">
+                        <ul class="tabs">
+                            <li class="tab col s6"><a href="#profile">Your Profile</a></li>
+                            <li class="tab col s6"><a href="#security">Security</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="profile" class="profile-tab-content">
+
+                    <h4 class="settings-option-title">Change Profile Picture</h4>
+
+                    <div class="profile-picture-box">
+                        
+                        <img id="pp_img" class="profile-picture-box--img z-depth-3"
+                             src="https://images3.imgbox.com/d7/00/fab9gWg9_o.jpg" alt="profile_picture">
+
+                        <div class="icon-input-box  profile-picture-box--input">
+                            <i class="material-icons z-depth-2">insert_link</i>
+                            <input id="pp_img_field" type="text" name="pp_img" placeholder="Direct Image Link"
+                                class="browser-default z-depth-2">
+                        </div>
+
+                    </div>
+
+                    <div style="display: flex;">
+                        <div class="paral-flex-box">
+
+                            <p class="fields-label--p">Set M<span class="grad-span">00</span>DS : </p>
+
+                            <div class="select-field-custom">
+                                <select name="moods_select" id="moods_select" class="browser-default">
+                                    <option disabled selected>Choose an option</option>
+                                    <option value="aggressive">Aggressive</option>
+                                    <option value="alal">Clam Down Alal!</option>
+                                    <option value="sleepy">Sleepy</option>
+                                    <option value="insomniac">Insomniac</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="paral-flex-box">
+
+                            <p class="fields-label--p">Home Layout : </p>
+
+                            <div class="select-field-custom">
+                                <select name="moods_select" id="moods_select" class="browser-default">
+                                    <option disabled selected>Choose an option</option>
+                                    <option value="aggressive">Responsive</option>
+                                    <option value="alal">Classic</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div id="security" class="col s12">Test 2</div>
+
+            </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./public/js/script.js"></script>
+</body>
+
+</html>
