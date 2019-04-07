@@ -2,8 +2,38 @@
     margin-bottom: 1.8rem;
 }
 
+.fields-label--p{
+    // font-size: 6rem;
+    vertical-align: middle;
+}
+
 .grad-span{
     background: linear-gradient(135deg, #f0223e, #f34238);
     color: transparent;
     -webkit-background-clip: text;
+    position: relative;
+
+    &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        background: #f0223e;
+        height: 1px;
+        width: 7px;
+        top: 9px;
+        right: 11px;
+        transform: rotate(-35deg);
+    }
+
+    &::before{
+        content: "";
+        display: block;
+        position: absolute;
+        background: #f0223e;
+        height: 1px;
+        width: 7px;
+        bottom: 10px;
+        left: 10.5px;
+        transform: rotate(-35deg);
+    }
 }

@@ -4,6 +4,8 @@
 <head>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="./public/css/style.css">
@@ -36,50 +38,153 @@
 
                     <h4 class="settings-option-title">Change Profile Picture</h4>
 
-                    <div class="profile-picture-box">
-                        
-                        <img id="pp_img" class="profile-picture-box--img z-depth-3"
-                             src="https://images3.imgbox.com/d7/00/fab9gWg9_o.jpg" alt="profile_picture">
+                    <form action="/" method="POST">
 
-                        <div class="icon-input-box  profile-picture-box--input">
-                            <i class="material-icons z-depth-2">insert_link</i>
-                            <input id="pp_img_field" type="text" name="pp_img" placeholder="Direct Image Link"
-                                class="browser-default z-depth-2">
-                        </div>
+                        <div class="profile-picture-box">
 
-                    </div>
+                            <img id="pp_img" class="materialboxed profile-picture-box--img z-depth-3"
+                                src="https://images3.imgbox.com/d7/00/fab9gWg9_o.jpg" alt="profile_picture">
 
-                    <div style="display: flex;">
-                        <div class="paral-flex-box">
-
-                            <p class="fields-label--p">Set M<span class="grad-span">00</span>DS : </p>
-
-                            <div class="select-field-custom">
-                                <select name="moods_select" id="moods_select" class="browser-default">
-                                    <option disabled selected>Choose an option</option>
-                                    <option value="aggressive">Aggressive</option>
-                                    <option value="alal">Clam Down Alal!</option>
-                                    <option value="sleepy">Sleepy</option>
-                                    <option value="insomniac">Insomniac</option>
-                                </select>
+                            <div class="icon-input-box  profile-picture-box--input">
+                                <i class="material-icons z-depth-2">insert_link</i>
+                                <input id="pp_img_field" type="text" name="pp_img" placeholder="Paste Direct Image Link"
+                                    class="browser-default z-depth-2">
                             </div>
 
                         </div>
 
-                        <div class="paral-flex-box">
+                        <hr class="hr-dark">
 
-                            <p class="fields-label--p">Home Layout : </p>
+                        <div class="paral-flex-box-container">
+                            
+                            <div class="paral-flex-box">
 
-                            <div class="select-field-custom">
-                                <select name="moods_select" id="moods_select" class="browser-default">
-                                    <option disabled selected>Choose an option</option>
-                                    <option value="aggressive">Responsive</option>
-                                    <option value="alal">Classic</option>
-                                </select>
+                                <div class="icon-label-box">
+                                    <p class="fields-label--p">Set M<span class="grad-span">00</span>DS : </p>
+                                </div>
+
+                                <div class="select-field-custom">
+                                    <select name="moods_select" id="moods_select" class="browser-default">
+                                        <option disabled selected>Choose an option</option>
+                                        <option value="aggressive">Aggressive</option>
+                                        <option value="alal">Clam Down Alal!</option>
+                                        <option value="sleepy">Sleepy</option>
+                                        <option value="insomniac">Insomniac</option>
+                                    </select>
+                                </div>
+
                             </div>
 
+                            <div class="paral-flex-box">
+
+                                <div class="icon-label-box">
+                                    <img src="./public/img/sexual.svg">
+                                    <p class="fields-label--p">Gender : </p>
+                                </div>
+
+
+                                <div class="select-field-custom">
+                                    <select name="gender_select" id="gender_select" class="browser-default">
+                                        <option disabled selected>Choose an option</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </select>
+                                </div>
+
+                            </div>
                         </div>
-                    </div>
+
+                        <div class="paral-flex-box-container">
+                            <div class="paral-flex-box">
+
+                                <div class="icon-label-box">
+                                    <i class="material-icons">home</i>
+                                    <p class="fields-label--p">Home Layout : </p>
+                                </div>
+
+                                <div class="select-field-custom">
+                                    <select name="home_layout_select" id="home_layout_select" class="browser-default">
+                                        <option disabled selected>Choose an option</option>
+                                        <option value="classic">Classic</option>
+                                        <option value="responsive">Responsive</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+                            <div class="paral-flex-box">
+
+                                <div class="icon-label-box">
+                                    <img src="./public/img/template.svg">
+                                    <p class="fields-label--p">Theme : </p>
+                                </div>
+
+                                <div class="select-field-custom">
+                                    <select name="theme_select" id="theme_select" class="browser-default">
+                                        <option disabled selected>Choose an option</option>
+                                        <option value="th_01">TH-01</option>
+                                        <option value="th_02">TH-02</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="paral-flex-box-container">
+                            <div class="paral-flex-box">
+
+                                <div class="icon-label-box">
+                                    <img src="./public/img/flag.svg" alt="">
+                                    <p class="fields-label--p">Choose Country : </p>
+                                </div>
+
+                                <div class="select-field-custom">
+                                    <select name="country_select" id="country_select" class="browser-default">
+                                        <option disabled selected>Choose an option</option>
+                                        <option value="bd">Bangladesh</option>
+                                        <option value="jinjira">Jinjira</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+                            <div class="paral-flex-box">
+
+                                <div class="icon-label-box">
+                                    <img src="./public/img/team.svg">
+                                    <p class="fields-label--p">Team : </p>
+                                </div>
+
+                                <div class="select-field-custom">
+                                    <select name="theme_select" id="theme_select" class="browser-default">
+                                        <option disabled selected>Choose an option</option>
+                                        <option value="th_01">TH-01</option>
+                                        <option value="th_02">TH-02</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="paral-flex-box--input">
+
+                            <div class="icon-input-box">
+                                <i class="material-icons z-depth-2">import_export</i>
+                                <input type="text" name="pref_client" placeholder="Preffered Client"
+                                    class="browser-default z-depth-2">
+                            </div>
+
+
+                            <div class="icon-input-box">
+                                <i class="material-icons z-depth-2">timeline</i>
+                                <input type="text" name="age" placeholder="Enter Your Age"
+                                    class="browser-default z-depth-2">
+                            </div>
+                        </div>
+
+                    </form>
+
                 </div>
 
                 <div id="security" class="col s12">Test 2</div>

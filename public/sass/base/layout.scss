@@ -1,0 +1,60 @@
+
+.paral-flex-box-container{
+    display: flex;
+    margin: 5rem 0rem;
+
+    @media only screen and (max-width: 500px){
+        flex-direction: column;
+    }
+}
+
+.paral-flex-box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    @media only screen and (max-width: 500px){
+        margin: 1.5rem 0rem;
+    }
+
+}
+
+.paral-flex-box--input{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    @media only screen and (max-width: 500px){
+        flex-direction: column;
+    }
+}
+
+.icon-input-box:not(:last-child){
+    margin-right: 3rem;
+
+    @media only screen and(max-width: 500px){
+        margin-right: 0rem;
+        margin-bottom: 3rem;
+    }
+}
+
+.icon-label-box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 16rem;
+
+    @media only screen and (max-width: 500px){
+        width: 13rem;
+    }
+
+    img{
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-right: 0.5rem;
+    }
+
+    i{
+        margin-right: 0.5rem;
+    }
+}

@@ -5,8 +5,9 @@
 
     position: relative;
     display: block;
-    width: 25rem;
-    height: 4.5rem;
+    // width: 22rem;
+    // height: 4.5rem;
+    padding: 1rem 6rem 1rem 0rem;
     line-height: 3;
     background: $dark-background-2;
     overflow: hidden;
@@ -14,13 +15,17 @@
     margin-left: 3rem;
     margin-right: 3rem;
 
+    @media only screen and(max-width: 500px){
+        width: 22rem;
+    }
+
     &::after{
         content: '\25BC';
         position: absolute;
         top: 0;
         right: 0;
         bottom: 0;
-        padding: 0 1.5rem;
+        padding: 0rem 1.5rem;
         background: $dark-background-3;
         pointer-events: none;
 
