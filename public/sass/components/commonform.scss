@@ -4,10 +4,8 @@
 .select-field-custom{
 
     position: relative;
-    display: block;
-    // width: 22rem;
-    // height: 4.5rem;
-    padding: 1rem 6rem 1rem 0rem;
+    height: 4.5rem;
+    flex-grow: 3;
     line-height: 3;
     background: $dark-background-2;
     overflow: hidden;
@@ -16,7 +14,9 @@
     margin-right: 3rem;
 
     @media only screen and(max-width: 500px){
-        width: 22rem;
+        width: 100%;
+        margin-left: 0rem;
+        margin-right: 0rem;
     }
 
     &::after{

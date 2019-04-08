@@ -32,9 +32,6 @@ body {
 .settings-option-title {
   margin-bottom: 1.8rem; }
 
-.fields-label--p {
-  vertical-align: middle; }
-
 .grad-span {
   background: linear-gradient(135deg, #f0223e, #f34238);
   color: transparent;
@@ -71,10 +68,13 @@ body {
 .paral-flex-box {
   display: flex;
   justify-content: flex-start;
-  align-items: center; }
+  align-items: center;
+  flex-grow: 1; }
   @media only screen and (max-width: 500px) {
     .paral-flex-box {
-      margin: 1.5rem 0rem; } }
+      margin: 1.5rem 0rem;
+      flex-direction: column;
+      align-items: flex-start; } }
 
 .paral-flex-box--input {
   display: flex;
@@ -98,7 +98,7 @@ body {
   width: 16rem; }
   @media only screen and (max-width: 500px) {
     .icon-label-box {
-      width: 13rem; } }
+      margin-bottom: 1rem; } }
   .icon-label-box img {
     width: 2.5rem;
     height: 2.5rem;
@@ -108,8 +108,8 @@ body {
 
 .select-field-custom {
   position: relative;
-  display: block;
-  padding: 1rem 6rem 1rem 0rem;
+  height: 4.5rem;
+  flex-grow: 3;
   line-height: 3;
   background: #2c3e50;
   overflow: hidden;
@@ -118,7 +118,9 @@ body {
   margin-right: 3rem; }
   @media only screen and (max-width: 500px) {
     .select-field-custom {
-      width: 22rem; } }
+      width: 100%;
+      margin-left: 0rem;
+      margin-right: 0rem; } }
   .select-field-custom::after {
     content: '\25BC';
     position: absolute;
