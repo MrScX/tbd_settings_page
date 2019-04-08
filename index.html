@@ -38,7 +38,7 @@
 
                     <h4 class="settings-option-title">Change Profile Picture</h4>
 
-                    <form action="/" method="POST">
+                    <form action="/" method="POST" enctype="multipart/form-data">
 
                         <div class="profile-picture-box">
 
@@ -56,7 +56,7 @@
                         <hr class="hr-dark">
 
                         <div class="paral-flex-box-container">
-                            
+
                             <div class="paral-flex-box">
 
                                 <div class="icon-label-box">
@@ -167,27 +167,23 @@
                         </div>
 
 
-                        <div class="paral-flex-box--input">
+                        <div class="paral-flex-box--center">
 
-                            <div class="icon-input-box">
-                                <i class="material-icons z-depth-2">import_export</i>
-                                <input type="text" name="pref_client" placeholder="Preffered Client"
-                                    class="browser-default z-depth-2">
+                            <div class="icon-input-box icon-input-box--half">
+                                <i class="material-icons z-depth-2">date_range</i>
+                                <input type="text" name="pref_client" placeholder="Enter Your Date of Birth"
+                                    class="browser-default datepicker z-depth-2">
                             </div>
 
-
-                            <div class="icon-input-box">
-                                <i class="material-icons z-depth-2">timeline</i>
-                                <input type="text" name="age" placeholder="Enter Your Age"
-                                    class="browser-default z-depth-2">
-                            </div>
                         </div>
 
                     </form>
 
                 </div>
 
-                <div id="security" class="col s12">Test 2</div>
+                <div id="security" class="security-tab-content">
+
+                </div>
 
             </div>
     </main>
