@@ -1,7 +1,21 @@
 
 $(document).ready(function () {
+
     $('.tabs').tabs();
+
     $('.materialboxed').materialbox();
+
+    $('.datepicker').pickadate({
+        selectMonths: true,
+        selectYears: 80,
+        format: 'yyyy-mm-dd',
+    });
+
+    // datepicker chrome solution
+    $('.datepicker').on('mousedown', function(event){
+        event.preventDefault();
+    });
+
 });
 
 // pp listen for change

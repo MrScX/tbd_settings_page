@@ -2,6 +2,7 @@
 .tabs{
     background: $dark-background;
     width: 100%;
+    overflow: hidden;
 }
 
 .tabs .tab a.active{

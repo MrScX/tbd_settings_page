@@ -78,6 +78,7 @@
 
     input{
         width: 100%;
+        color: $pure-black;
         padding: 1.5rem 2rem;
         outline: 0;
         border: 1px solid #333;
@@ -95,4 +96,8 @@
 
 .icon-input-box--half{
     width: 50%;
+
+    @media only screen and(max-width: 500px){
+        width: 100%;
+    }
 }

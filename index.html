@@ -3,7 +3,7 @@
 
 <head>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -98,15 +98,15 @@
                             <div class="paral-flex-box">
 
                                 <div class="icon-label-box">
-                                    <i class="material-icons">home</i>
-                                    <p class="fields-label--p">Home Layout : </p>
+                                    <img src="./public/img/flag.svg" alt="">
+                                    <p class="fields-label--p">Choose Country : </p>
                                 </div>
 
                                 <div class="select-field-custom">
-                                    <select name="home_layout_select" id="home_layout_select" class="browser-default">
+                                    <select name="country_select" id="country_select" class="browser-default">
                                         <option disabled selected>Choose an option</option>
-                                        <option value="classic">Classic</option>
-                                        <option value="responsive">Responsive</option>
+                                        <option value="bd">Bangladesh</option>
+                                        <option value="jinjira">Jinjira</option>
                                     </select>
                                 </div>
 
@@ -130,25 +130,9 @@
                             </div>
                         </div>
 
-                        <div class="paral-flex-box-container">
-                            <div class="paral-flex-box">
+                        <div class="paral-flex-box--center">
 
-                                <div class="icon-label-box">
-                                    <img src="./public/img/flag.svg" alt="">
-                                    <p class="fields-label--p">Choose Country : </p>
-                                </div>
-
-                                <div class="select-field-custom">
-                                    <select name="country_select" id="country_select" class="browser-default">
-                                        <option disabled selected>Choose an option</option>
-                                        <option value="bd">Bangladesh</option>
-                                        <option value="jinjira">Jinjira</option>
-                                    </select>
-                                </div>
-
-                            </div>
-
-                            <div class="paral-flex-box">
+                            <div class="paral-flex-box--center--half">
 
                                 <div class="icon-label-box">
                                     <img src="./public/img/team.svg">
@@ -188,8 +172,10 @@
             </div>
     </main>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://www.torrentbd.net/torrent/themes/material/jquery-2.1.1.min.js"></script>
+    
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
     <script src="./public/js/script.js"></script>
 </body>
 

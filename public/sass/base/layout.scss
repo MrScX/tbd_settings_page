@@ -28,6 +28,21 @@
     align-items: center;
 }
 
+.paral-flex-box--center--half{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+    margin-bottom: 3rem;
+
+    @media only screen and (max-width: 500px){
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
 .paral-flex-box--input{
     display: flex;
     justify-content: flex-start;
