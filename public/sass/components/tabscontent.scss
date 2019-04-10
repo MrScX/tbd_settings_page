@@ -27,3 +27,18 @@
         }
     }
 }
+
+//  Security Tab
+
+.security-tab{
+    margin-top: 7rem;
+}
+
+.sub-header{
+    background: $card-teal;
+    text-align: center;
+
+    &--title{
+        padding: 0.6rem 0rem;
+    }
+}

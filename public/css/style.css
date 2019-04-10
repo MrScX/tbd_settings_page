@@ -86,7 +86,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 50%;
-  margin-bottom: 3rem; }
+  margin-bottom: 5rem; }
   @media only screen and (max-width: 500px) {
     .paral-flex-box--center--half {
       width: 100%;
@@ -193,7 +193,8 @@ body {
       box-shadow: 0 0 0 0.2rem rgba(30, 144, 255, 0.5); }
 
 .icon-input-box--half {
-  width: 50%; }
+  width: 50%;
+  margin-bottom: 3rem; }
   @media only screen and (max-width: 500px) {
     .icon-input-box--half {
       width: 100%; } }
@@ -217,6 +218,15 @@ body {
     @media only screen and (max-width: 500px) {
       .profile-picture-box--img {
         margin-bottom: 3rem; } }
+
+.security-tab {
+  margin-top: 7rem; }
+
+.sub-header {
+  background: #006064;
+  text-align: center; }
+  .sub-header--title {
+    padding: 0.6rem 0rem; }
 
 .hr-dark {
   background: #454a59;
