@@ -31,3 +31,15 @@
     background-color: $tabs-color;
     /*Custom Color Of Indicator*/
 }
+
+.input-field input[type=password] {
+    font-size: 1.6rem;
+}
+
+.input-field input[type=password] + label {
+    font-size: 1.4rem;
+}
+
+.input-field input[type=password]:focus + label {
+    font-size: 1.2rem;
+}

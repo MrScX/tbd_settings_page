@@ -228,6 +228,9 @@ body {
   .sub-header--title {
     padding: 0.6rem 0rem; }
 
+.change-password-box {
+  padding: 1rem; }
+
 .hr-dark {
   background: #454a59;
   color: #454a59;
@@ -260,6 +263,15 @@ body {
 .tabs .indicator {
   background-color: #039be5;
   /*Custom Color Of Indicator*/ }
+
+.input-field input[type=password] {
+  font-size: 1.6rem; }
+
+.input-field input[type=password] + label {
+  font-size: 1.4rem; }
+
+.input-field input[type=password]:focus + label {
+  font-size: 1.2rem; }
 
 .content-container {
   background: #2b2d33;
