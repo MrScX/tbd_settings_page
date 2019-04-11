@@ -5,7 +5,9 @@ $(document).ready(function () {
 
     $('.materialboxed').materialbox();
 
-    $('.tooltipped').tooltip({delay: 0});
+    $('.tooltipped').tooltip({ delay: 0 });
+
+    $('input#input_text, textarea#textarea2').characterCounter();
 
     $('.datepicker').pickadate({
         selectMonths: true,
@@ -78,8 +80,19 @@ document.getElementById("show_password").addEventListener("click", function () {
     });
 });
 
-// document.getElementById("cTitle").addEventListener("focus",function(){
-//     const instance = M.Tooltip.getInstance(elem);
+document.getElementById("password").addEventListener("input", function (evt) {
 
-//     instance.open();
-// });
+    const re_password = document.getElementById("re_password");
+
+    if (this.value != re_password.value) {
+
+        this.style.borderBottomColor = "crimson";
+        re_password.style.borderBottomColor =  "crimson";
+
+    } else {
+
+        this.style.borderBottomColor = "green";
+        re_password.style.borderBottomColor =  "green";
+    }
+
+});
