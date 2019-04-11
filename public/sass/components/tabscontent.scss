@@ -38,6 +38,10 @@
     background: $card-teal;
     text-align: center;
 
+    &--title--red{
+        background: $material-red;
+    }
+
     &--title{
         padding: 0.6rem 0rem;
     }

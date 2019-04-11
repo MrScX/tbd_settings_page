@@ -225,6 +225,8 @@ body {
 .sub-header {
   background: #006064;
   text-align: center; }
+  .sub-header--title--red {
+    background: #D32F2F; }
   .sub-header--title {
     padding: 0.6rem 0rem; }
 
@@ -243,8 +245,17 @@ body {
   border-color: #454a59;
   border-width: 1px; }
 
+.margin-gutter-small {
+  margin-bottom: 2rem; }
+
+.margin-top-small {
+  margin-top: 2rem; }
+
 .margin-gutter-medium {
   margin-bottom: 5rem; }
+
+.margin-top-medium {
+  margin-top: 5rem; }
 
 .tabs {
   background: #2b2d33;
@@ -291,6 +302,9 @@ body {
 
 .material-tooltip {
   font-size: 1.6rem; }
+
+[type="checkbox"] + label {
+  font-size: 1.5rem; }
 
 .content-container {
   background: #2b2d33;
