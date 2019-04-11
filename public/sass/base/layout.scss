@@ -9,9 +9,7 @@
 }
 
 .paral-flex-box{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    @include flexBox(flex-start,center);
     flex-grow: 1;
 
     @media only screen and (max-width: 500px){
@@ -23,15 +21,13 @@
 }
 
 .paral-flex-box--center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexBox(center,center);
+
+    margin: 2rem 0rem;
 }
 
 .paral-flex-box--center--half{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexBox(center,center);
 
     width: 50%;
     margin-bottom: 5rem;
@@ -44,9 +40,7 @@
 }
 
 .paral-flex-box--input{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    @include flexBox(flex-start,center);
 
     @media only screen and (max-width: 500px){
         flex-direction: column;
@@ -63,9 +57,7 @@
 }
 
 .icon-label-box{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    @include flexBox(flex-start,center);
     width: 16rem;
 
     @media only screen and (max-width: 500px){

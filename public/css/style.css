@@ -9,7 +9,6 @@ html {
 body {
   font-family: "Quicksand",sans-serif;
   font-size: 1.6rem;
-  position: relative;
   color: #c1cdd2;
   background: #212328; }
 
@@ -79,7 +78,8 @@ body {
 .paral-flex-box--center {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin: 2rem 0rem; }
 
 .paral-flex-box--center--half {
   display: flex;
@@ -229,7 +229,12 @@ body {
     padding: 0.6rem 0rem; }
 
 .change-password-box {
-  padding: 1rem; }
+  padding: 1rem 2rem 1rem 2rem; }
+
+.show_password_icon {
+  transition: all 0.2s;
+  margin-left: 2rem;
+  cursor: pointer; }
 
 .hr-dark {
   background: #454a59;
@@ -237,6 +242,9 @@ body {
   border-style: inset;
   border-color: #454a59;
   border-width: 1px; }
+
+.margin-gutter-medium {
+  margin-bottom: 5rem; }
 
 .tabs {
   background: #2b2d33;
@@ -264,14 +272,25 @@ body {
   background-color: #039be5;
   /*Custom Color Of Indicator*/ }
 
-.input-field input[type=password] {
+.input-field input[type=password], .input-field input[type=text] {
   font-size: 1.6rem; }
 
-.input-field input[type=password] + label {
+.input-field input[type=password] + label, .input-field input[type=text] + label {
   font-size: 1.4rem; }
 
-.input-field input[type=password]:focus + label {
+.input-field input[type=password]:focus + label, .input-field input[type=text]:focus + label {
   font-size: 1.2rem; }
+
+.submit-btn-large {
+  font-size: 1.5rem; }
+  .submit-btn-large i {
+    font-size: 2.5rem; }
+
+.datepicker {
+  cursor: pointer; }
+
+.material-tooltip {
+  font-size: 1.6rem; }
 
 .content-container {
   background: #2b2d33;

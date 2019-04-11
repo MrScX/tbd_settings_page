@@ -5,17 +5,20 @@ $(document).ready(function () {
 
     $('.materialboxed').materialbox();
 
+    $('.tooltipped').tooltip({delay: 0});
+
     $('.datepicker').pickadate({
         selectMonths: true,
         selectYears: 80,
         format: 'yyyy-mm-dd',
     });
 
+    $(".tooltip").trigger("focus.tooltip");
+
     // datepicker chrome solution
-    $('.datepicker').on('mousedown', function(event){
+    $('.datepicker').on('mousedown', function (event) {
         event.preventDefault();
     });
-
 });
 
 // pp listen for change
@@ -51,7 +54,32 @@ document.getElementById("pp_img_field").addEventListener("input", function (evt)
             targetImg.src = defaultImgLink;
             this.style.borderColor = "crimson";
             this.style.boxShadow = "0 0 0 0.2rem rgba(220,20,60,.5)";
-            
+
         }
     });
 });
+
+document.getElementById("show_password").addEventListener("click", function () {
+
+    const inputFields = Array.from(document.querySelectorAll(".passwd_field"));
+
+    inputFields.forEach(field => {
+
+        if (field.type === "password") {
+
+            field.type = "text";
+            this.style.color = "#4db6ac"; // "this" refers to the icon here;
+
+        } else if (field.type === "text") {
+
+            field.type = "password";
+            this.style.color = "white";
+        }
+    });
+});
+
+// document.getElementById("cTitle").addEventListener("focus",function(){
+//     const instance = M.Tooltip.getInstance(elem);
+
+//     instance.open();
+// });

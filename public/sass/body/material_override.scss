@@ -32,14 +32,30 @@
     /*Custom Color Of Indicator*/
 }
 
-.input-field input[type=password] {
+.input-field input[type=password], .input-field input[type=text] {
     font-size: 1.6rem;
 }
 
-.input-field input[type=password] + label {
+.input-field input[type=password] + label, .input-field input[type=text] + label {
     font-size: 1.4rem;
 }
 
-.input-field input[type=password]:focus + label {
+.input-field input[type=password]:focus + label, .input-field input[type=text]:focus + label {
     font-size: 1.2rem;
+}
+
+.submit-btn-large {
+    font-size: 1.5rem;
+
+    i{
+        font-size: 2.5rem;
+    }
+}
+
+.datepicker {
+    cursor: pointer;
+}
+
+.material-tooltip{
+    font-size: 1.6rem;
 }
