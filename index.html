@@ -180,7 +180,7 @@
                         <div class="input-field">
                             <i class="material-icons prefix">mode_edit</i>
                             <textarea id="icon_prefix2" class="materialize-textarea" data-length="150"></textarea>
-                            <label for="icon_prefix2">First Name</label>
+                            <label for="icon_prefix2">Signature</label>
                         </div>
 
                         <!-- </div> -->
@@ -208,18 +208,18 @@
                                     <h3 class="sub-header--title">Change Password</h3>
                                 </div>
 
-                                <div class="change-password-box">
+                                <div class="paral-box">
 
                                     <form action="/" method="POST">
                                         <div class="input-field paral-flex-box--center">
-                                            <input id="password" type="password" class="validate passwd_field">
+                                            <input id="password" type="password" class="passwd_field">
                                             <label for="password">Password</label>
                                             <i id="show_password" class="material-icons show_password_icon tooltipped"
                                                 data-position="bottom" data-tooltip="Show Password">remove_red_eye</i>
                                         </div>
 
                                         <div class="input-field">
-                                            <input id="re_password" type="password" class="validate passwd_field">
+                                            <input id="re_password" type="password" class="passwd_field">
                                             <label for="re_password">Re-Password</label>
                                         </div>
 
@@ -239,17 +239,19 @@
                                     <h3 class="sub-header--title sub-header--title--red">Reset Passkey</h3>
                                 </div>
 
-                                <div class="change-password-box">
+                                <div class="paral-box">
 
-                                    <form action="#">
+                                    <form action="/reset-passkey" method="POST">
                                         <p>
-                                            Reset Passkey
+                                            <span class="margin-right-medium">
+                                                Reset Passkey
+                                            </span>
                                             <input type="checkbox" id="reset_passkey" />
                                             <label for="reset_passkey">Reset</label>
                                         </p>
                                         <button
                                             class="submit-btn-large btn btn-medium waves-effect waves-light red darken-2 margin-gutter-small margin-top-small"
-                                            type="submit" name="submit">SUBMIT <i
+                                            type="submit" name="submit">RESET <i
                                                 class="material-icons left">vpn_key</i></button>
                                     </form>
 
@@ -263,17 +265,51 @@
                             <div class="z-depth-1">
 
                                 <div class="sub-header">
-                                    <h3 class="sub-header--title">Account Settings</h3>
+                                    <h3 class="sub-header--title">Privacy</h3>
                                 </div>
 
-                                <div class="">
+                                <div class="paral-box">
 
-                                    asdasd
+                                    <form action="#">
 
-                                    asdasd
+                                        <p class="tooltipped margin-gutter-medium" data-position="top"
+                                            data-tooltip="Determines what users can send you private messages.">
+                                            <span>Accept PMs: </span>
+                                            <input class="with-gap" name="pm" type="radio" id="f_all" />
+                                            <label for="f_all">From All</label>
+                                            <input class="with-gap" name="pm" type="radio" id="f_friend" />
+                                            <label for="f_friend">From friends/connected users only</label>
+                                        </p>
+
+                                        <p class="tooltipped margin-gutter-medium" data-position="top"
+                                            data-tooltip="Determines where your username and details are displayed.">
+                                            <span class="margin-right-small">Privacy Level: </span>
+
+                                            <input class="with-gap" name="low" type="radio" id="low_p" />
+                                            <label for="low_p">Low</label>
+
+                                            <input class="with-gap" name="medium" type="radio" id="medium_p" />
+                                            <label for="medium_p">Medium</label>
+
+                                            <input class="with-gap" name="high" type="radio" id="high_p" />
+                                            <label for="high_p">High</label>
+
+                                        </p>
+
+                                        <div class="switch">
+                                            <span class="margin-right-small">
+                                                Hide ShoutBox: 
+                                            </span>
+                                            <label>
+                                                Unhide
+                                                <input type="checkbox">
+                                                <span class="lever"></span>
+                                                Hide
+                                            </label>
+                                        </div>
 
 
-                                    asdasdasd
+                                    </form>
                                 </div>
 
                             </div>

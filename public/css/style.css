@@ -230,7 +230,7 @@ body {
   .sub-header--title {
     padding: 0.6rem 0rem; }
 
-.change-password-box {
+.paral-box {
   padding: 1rem 2rem 1rem 2rem; }
 
 .show_password_icon {
@@ -254,8 +254,20 @@ body {
 .margin-gutter-medium {
   margin-bottom: 5rem; }
 
+.margin-gutter-small {
+  margin-bottom: 2rem; }
+
 .margin-top-medium {
   margin-top: 5rem; }
+
+.margin-right-medium {
+  margin-right: 5rem; }
+
+.margin-left-medium {
+  margin-left: 5rem; }
+
+.margin-right-small {
+  margin-right: 2rem; }
 
 .tabs {
   background: #2b2d33;
@@ -305,6 +317,17 @@ body {
 
 [type="checkbox"] + label {
   font-size: 1.5rem; }
+
+[type="radio"]:not(:checked) + label,
+[type="radio"]:checked + label {
+  font-size: 1.3rem;
+  padding-left: 2.5rem; }
+
+.switch label {
+  font-size: 1.2rem; }
+
+.switch label .lever {
+  background: #cccccc; }
 
 .content-container {
   background: #2b2d33;

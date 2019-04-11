@@ -5,7 +5,7 @@ $(document).ready(function () {
 
     $('.materialboxed').materialbox();
 
-    $('.tooltipped').tooltip({ delay: 0 });
+    $('.tooltipped').tooltip({ delay: 10 });
 
     $('input#input_text, textarea#textarea2').characterCounter();
 
@@ -80,19 +80,23 @@ document.getElementById("show_password").addEventListener("click", function () {
     });
 });
 
-document.getElementById("password").addEventListener("input", function (evt) {
+document.getElementById("re_password").addEventListener("keyup", function (evt) {
 
-    const re_password = document.getElementById("re_password");
+    const password = document.getElementById("password");
+    
 
-    if (this.value != re_password.value) {
+    if (this.value !== password.value) {
 
-        this.style.borderBottomColor = "crimson";
-        re_password.style.borderBottomColor =  "crimson";
+        this.classList.add("invalid");
+        password.classList.add("invalid");
 
     } else {
 
-        this.style.borderBottomColor = "green";
-        re_password.style.borderBottomColor =  "green";
+        this.classList.remove("invalid");
+        password.classList.remove("invalid");
+
+        this.classList.add("valid");
+        password.classList.add("valid");
     }
 
 });
