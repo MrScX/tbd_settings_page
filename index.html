@@ -65,7 +65,7 @@
                                 </div>
 
                                 <div class="select-field-custom">
-                                    <select name="moods_select" id="moods_select" class="browser-default">
+                                    <select name="moods" id="moods_select" class="browser-default">
                                         <option disabled selected>Choose an option</option>
                                         <option value="aggressive">Aggressive</option>
                                         <option value="alal">Clam Down Alal!</option>
@@ -85,7 +85,7 @@
 
 
                                 <div class="select-field-custom">
-                                    <select name="gender_select" id="gender_select" class="browser-default">
+                                    <select name="gender" id="gender_select" class="browser-default">
                                         <option disabled selected>Choose an option</option>
                                         <option value="male">Male</option>
                                         <option value="female">Female</option>
@@ -106,7 +106,7 @@
                                 </div>
 
                                 <div class="select-field-custom">
-                                    <select name="country_select" id="country_select" class="browser-default">
+                                    <select name="country" id="country_select" class="browser-default">
                                         <option disabled selected>Choose an option</option>
                                         <option value="bd">Bangladesh</option>
                                         <option value="jinjira">Jinjira</option>
@@ -144,7 +144,7 @@
                                 </div>
 
                                 <div class="select-field-custom">
-                                    <select name="theme_select" id="theme_select" class="browser-default">
+                                    <select name="teams" id="theme_select" class="browser-default">
                                         <option disabled selected>Choose an option</option>
                                         <option value="gamers">Gamers Unite!</option>
                                         <option value="yoo">Team TBD</option>
@@ -173,54 +173,56 @@
                         </div>
 
 
-                        <div class="paral-flex-box">
+                        <div class="paral-flex-box margin-gutter-medium">
 
-                            <div class="z-depth-1">
+                            <div>
+                                <div class="z-depth-1">
 
-                                <div class="sub-header">
-                                    <h3 class="sub-header--title">Privacy</h3>
-                                </div>
+                                    <div class="sub-header">
+                                        <h3 class="sub-header--title">Privacy</h3>
+                                    </div>
 
-                                <div class="paral-box">
+                                    <div class="paral-box">
 
-                                    <p class="tooltipped margin-gutter-medium" data-position="top"
-                                        data-tooltip="Determines what users can send you private messages.">
-                                        <span>Accept PMs: </span>
-                                        <input class="with-gap" name="pm" type="radio" id="f_all" />
-                                        <label for="f_all">From All</label>
-                                        <input class="with-gap" name="pm" type="radio" id="f_friend" />
-                                        <label for="f_friend">From friends/connected users only</label>
-                                    </p>
+                                        <p class="tooltipped margin-gutter-medium" data-position="top"
+                                            data-tooltip="Determines what users can send you private messages.">
+                                            <span>Accept PMs: </span>
+                                            <input class="with-gap" name="acceptpms" type="radio" id="f_all" />
+                                            <label for="f_all">From All</label>
+                                            <input class="with-gap" name="acceptpms" type="radio" id="f_friend" />
+                                            <label for="f_friend">From friends/connected users only</label>
+                                        </p>
 
-                                    <p class="tooltipped margin-gutter-medium" data-position="top"
-                                        data-tooltip="Determines where your username and details are displayed.">
-                                        <span class="margin-right-small">Privacy Level: </span>
+                                        <p class="tooltipped margin-gutter-medium" data-position="top"
+                                            data-tooltip="Determines where your username and details are displayed.">
+                                            <span class="margin-right-small">Privacy Level: </span>
 
-                                        <input class="with-gap" name="low" type="radio" id="low_p" />
-                                        <label for="low_p">Low</label>
+                                            <input class="with-gap" name="privacy" type="radio" id="low_p" />
+                                            <label for="low_p">Low</label>
 
-                                        <input class="with-gap" name="medium" type="radio" id="medium_p" />
-                                        <label for="medium_p">Medium</label>
+                                            <input class="with-gap" name="privacy" type="radio" id="medium_p" />
+                                            <label for="medium_p">Medium</label>
 
-                                        <input class="with-gap" name="high" type="radio" id="high_p" />
-                                        <label for="high_p">High</label>
+                                            <input class="with-gap" name="privacy" type="radio" id="high_p" />
+                                            <label for="high_p">High</label>
 
-                                    </p>
+                                        </p>
 
-                                    <div class="switch">
-                                        <span class="margin-right-small">
-                                            Hide ShoutBox:
-                                        </span>
-                                        <label>
-                                            Unhide
-                                            <input type="checkbox">
-                                            <span class="lever"></span>
-                                            Hide
-                                        </label>
+                                        <div class="switch margin-gutter-small">
+                                            <span class="margin-right-small">
+                                                Hide ShoutBox:
+                                            </span>
+                                            <label>
+                                                Unhide
+                                                <input type="checkbox" name="hideshoutbox">
+                                                <span class="lever"></span>
+                                                Hide
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
-
                             </div>
+
 
                             <div class="input-field">
                                 <i class="material-icons prefix">mode_edit</i>
@@ -230,12 +232,11 @@
 
                         </div>
 
-
                         <hr class="hr-dark">
 
                         <div class="paral-flex-box--center">
                             <button class="submit-btn-large btn btn-large waves-effect waves-light green darken-2"
-                                type="submit" name="submit">Good to go! <i
+                                type="submit" name="submit">Save Settings <i
                                     class="material-icons left">done_all</i></button>
                         </div>
                     </form>
@@ -256,21 +257,16 @@
                                     <div class="paral-box">
 
                                         <div class="input-field paral-flex-box--center">
-                                            <input id="password" type="password" class="passwd_field">
+                                            <input id="password" type="password" class="passwd_field" name="chpassword">
                                             <label for="password">Password</label>
                                             <i id="show_password" class="material-icons show_password_icon tooltipped"
                                                 data-position="bottom" data-tooltip="Show Password">remove_red_eye</i>
                                         </div>
 
-                                        <div class="input-field">
-                                            <input id="re_password" type="password" class="passwd_field">
+                                        <div class="input-field margin-gutter-small">
+                                            <input id="re_password" type="password" class="passwd_field" name="passagain">
                                             <label for="re_password">Re-Password</label>
                                         </div>
-
-                                        <button
-                                            class="submit-btn-large btn btn-medium waves-effect waves-light green darken-2 margin-gutter-small margin-top-small"
-                                            type="submit" name="submit">SUBMIT <i
-                                                class="material-icons left">done_all</i></button>
 
 
                                     </div>
@@ -288,26 +284,32 @@
 
                                 <div class="paral-box">
 
-                                    <p>
+                                    <p class="margin-gutter-small">
                                         <span class="margin-right-medium">
                                             Reset Passkey
                                         </span>
-                                        <input type="checkbox" id="reset_passkey" />
+                                        <input type="checkbox" id="reset_passkey" name="resetpasskey" />
                                         <label for="reset_passkey">Reset</label>
                                     </p>
-                                    <p class="red-text">[Read <a href="#">FAQ</a> before proceeding]</p>
-                                    <button
-                                        class="submit-btn-large btn btn-medium waves-effect waves-light red darken-2 margin-gutter-small margin-top-small"
-                                        type="submit" name="submit">RESET <i
-                                            class="material-icons left">vpn_key</i></button>
-                                    </form>
+
+                                    <p class="red-text margin-gutter-small">[Read <a href="#">FAQ</a> before proceeding]
+                                    </p>
 
                                 </div>
                             </div>
 
 
                         </div>
+
+
                     </div>
+                    <hr class="hr-dark">
+                    <div class="paral-flex-box--center">
+                        <button
+                            class="submit-btn-large btn btn-medium waves-effect waves-light green darken-2 margin-gutter-small margin-top-small"
+                            type="submit" name="submit">SUBMIT <i class="material-icons left">done_all</i></button>
+                    </div>
+                    </form>
                 </div>
 
             </div>
