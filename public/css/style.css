@@ -329,6 +329,9 @@ body {
 .switch label .lever {
   background: #cccccc; }
 
+.btn:hover {
+  color: black; }
+
 .content-container {
   background: #2b2d33;
   padding: 1rem 1rem;
