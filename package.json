@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node-sass public/sass/main.scss public/css/style.css -w"
+    "start": "node-sass public/sass/main-dark.scss public/css/style-dark.css -w",
+    "compile:dark": "node-sass public/sass/main-dark.scss public/css/style-dark.css",
+    "compile:light": "node-sass public/sass/main-light.scss public/css/style-light.css"
   },
   "keywords": [],
   "author": "",

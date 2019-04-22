@@ -8,7 +8,9 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./public/css/style.css">
+    <!-- <link rel="stylesheet" href="./public/css/style-dark.css"> -->
+
+    <link id="yoo" rel="stylesheet" href="./public/css/style-light.css">
 
     <title>TBD Settings Page</title>
 
@@ -17,6 +19,7 @@
 <body>
 
     <main>
+        <button id="theme" class="btn btn-medium btn-green">Switch Theme</button>
         <div class="container">
             <div class="row content-container z-depth-2">
 
@@ -186,7 +189,7 @@
 
                                         <p class="tooltipped margin-gutter-medium" data-position="top"
                                             data-tooltip="Determines what users can send you private messages.">
-                                            <span>Accept PMs: </span>
+                                            <span class="paral-title">Accept PMs: </span>
                                             <input class="with-gap" name="acceptpms" type="radio" id="f_all" />
                                             <label for="f_all">From All</label>
                                             <input class="with-gap" name="acceptpms" type="radio" id="f_friend" />
@@ -195,7 +198,7 @@
 
                                         <p class="tooltipped margin-gutter-medium" data-position="top"
                                             data-tooltip="Determines where your username and details are displayed.">
-                                            <span class="margin-right-small">Privacy Level: </span>
+                                            <span class="margin-right-small paral-title">Privacy Level: </span>
 
                                             <input class="with-gap" name="privacy" type="radio" id="low_p" />
                                             <label for="low_p">Low</label>
@@ -209,7 +212,7 @@
                                         </p>
 
                                         <div class="switch margin-gutter-small">
-                                            <span class="margin-right-small">
+                                            <span class="margin-right-small paral-title">
                                                 Hide ShoutBox:
                                             </span>
                                             <label>
@@ -223,11 +226,11 @@
                                 </div>
                             </div>
 
-
-                            <div class="input-field">
-                                <i class="material-icons prefix">mode_edit</i>
-                                <textarea id="icon_prefix2" class="materialize-textarea" data-length="150"></textarea>
-                                <label for="icon_prefix2">Signature</label>
+                            <div class="signature-input-box">
+                                <div class="input-field">
+                                    <textarea id="icon_prefix2" class="materialize-textarea" data-length="150"></textarea>
+                                    <label for="icon_prefix2">Signature</label>
+                                </div>
                             </div>
 
                         </div>
@@ -244,7 +247,7 @@
                 </div>
 
                 <div id="security" class="security-tab-content">
-                    <div class="row security-tab">
+                    <div class="row security-tab margin-gutter-medium">
                         <div class="col s12 l6">
 
                             <div class="z-depth-1">
@@ -285,7 +288,7 @@
                                 <div class="paral-box">
 
                                     <p class="margin-gutter-small">
-                                        <span class="margin-right-medium">
+                                        <span class="margin-right-medium paral-title">
                                             Reset Passkey
                                         </span>
                                         <input type="checkbox" id="reset_passkey" name="resetpasskey" />
@@ -320,6 +323,24 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
     <script src="./public/js/script.js"></script>
+    <script>
+        
+        document.getElementById("theme").addEventListener("click",function(){
+
+            const head = document.getElementsByTagName("head")[0];
+
+            const link = document.getElementById("yoo");
+
+            if(link.href.endsWith("style-light.css")){
+
+                link.href = "./public/css/style-dark.css";
+            }else{
+                
+                link.href = "./public/css/style-light.css";
+            }
+        });
+    
+    </script>
 </body>
 
 </html>

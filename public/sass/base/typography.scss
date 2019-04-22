@@ -1,13 +1,10 @@
 .settings-option-title{
     margin-bottom: 1.8rem;
-}
-
-.fields-label--p{
-    // vertical-align: middle;
+    color: $title-text;
 }
 
 .grad-span{
-    background: linear-gradient(135deg, #f0223e, #f34238);
+    background: linear-gradient(135deg, $bright-red, $bright-red-2);
     color: transparent;
     -webkit-background-clip: text;
     position: relative;
@@ -16,7 +13,7 @@
         content: "";
         display: block;
         position: absolute;
-        background: #f0223e;
+        background: $bright-red;
         height: 1px;
         width: 7px;
         top: 9px;
@@ -28,7 +25,7 @@
         content: "";
         display: block;
         position: absolute;
-        background: #f0223e;
+        background: $bright-red;
         height: 1px;
         width: 7px;
         bottom: 10px;

@@ -29,7 +29,8 @@ body {
   color: #C8C7C7; }
 
 .settings-option-title {
-  margin-bottom: 1.8rem; }
+  margin-bottom: 1.8rem;
+  color: #c1cdd2; }
 
 .grad-span {
   background: linear-gradient(135deg, #f0223e, #f34238);
@@ -219,6 +220,9 @@ body {
       .profile-picture-box--img {
         margin-bottom: 3rem; } }
 
+.fields-label--p {
+  color: #c1cdd2; }
+
 .security-tab {
   margin-top: 7rem; }
 
@@ -228,7 +232,8 @@ body {
   .sub-header--title--red {
     background: #D32F2F; }
   .sub-header--title {
-    padding: 0.6rem 0rem; }
+    padding: 0.6rem 0rem;
+    color: #c1cdd2; }
 
 .paral-box {
   padding: 1rem 2rem 1rem 2rem; }
@@ -237,6 +242,15 @@ body {
   transition: all 0.2s;
   margin-left: 2rem;
   cursor: pointer; }
+
+.signature-input-box {
+  width: 45%;
+  margin-left: 2rem; }
+  @media only screen and (max-width: 500px) {
+    .signature-input-box {
+      width: 100%;
+      margin-left: 0rem;
+      margin-top: 5rem; } }
 
 .hr-dark {
   background: #454a59;
@@ -296,7 +310,8 @@ body {
   /*Custom Color Of Indicator*/ }
 
 .input-field input[type=password], .input-field input[type=text] {
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  color: #c1cdd2; }
 
 .input-field input[type=password] + label, .input-field input[type=text] + label {
   font-size: 1.4rem; }
@@ -331,6 +346,16 @@ body {
 
 .btn:hover {
   color: black; }
+
+textarea.materialize-textarea {
+  font-size: 1.7rem;
+  color: #c1cdd2; }
+
+.input-field label {
+  font-size: 1.5rem; }
+
+textarea.materialize-textarea:focus:not([readonly]) + label {
+  font-size: 1.2rem; }
 
 .content-container {
   background: #2b2d33;

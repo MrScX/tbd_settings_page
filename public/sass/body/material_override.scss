@@ -34,6 +34,7 @@
 
 .input-field input[type=password], .input-field input[type=text] {
     font-size: 1.6rem;
+    color: $input-color;
 }
 
 .input-field input[type=password] + label, .input-field input[type=text] + label {
@@ -42,6 +43,10 @@
 
 .input-field input[type=password]:focus + label, .input-field input[type=text]:focus + label {
     font-size: 1.2rem;
+}
+
+.input-field .character-counter{
+    color: $input-color;
 }
 
 .submit-btn-large {
@@ -80,4 +85,17 @@
 
 .btn:hover{
     color: black;
+}
+
+textarea.materialize-textarea{
+    font-size: 1.7rem;
+    color: $input-color;
+}
+
+.input-field label{
+    font-size: 1.5rem;
+}
+
+textarea.materialize-textarea:focus:not([readonly])+label{
+    font-size: 1.2rem;
 }

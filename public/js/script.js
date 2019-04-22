@@ -80,7 +80,7 @@
             } else if (field.type === "text") {
     
                 field.type = "password";
-                this.style.color = "white";
+                this.style.color = "#c1cdd2";
                 changeTooltip(this, "Show Password");
             }
         });

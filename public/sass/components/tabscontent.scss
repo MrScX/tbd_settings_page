@@ -28,6 +28,10 @@
     }
 }
 
+.fields-label--p{
+    color: $title-text;
+}
+
 //  Security Tab
 
 .security-tab{
@@ -44,6 +48,7 @@
 
     &--title{
         padding: 0.6rem 0rem;
+        color: $sub-title-text;
     }
 }
 
@@ -55,4 +60,19 @@
     transition: all 0.2s;
     margin-left: 2rem;
     cursor: pointer;
+}
+
+.signature-input-box{
+    width: 45%;
+    margin-left: 2rem;
+
+    @media only screen and(max-width: 500px){
+        width: 100%;
+        margin-left: 0rem;
+        margin-top: 5rem;
+    }
+}
+
+.paral-title{
+    color: $title-text;
 }
