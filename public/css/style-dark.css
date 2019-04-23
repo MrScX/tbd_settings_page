@@ -212,7 +212,10 @@ body {
   @media screen and (max-width: 500px) {
     .profile-picture-box {
       flex-direction: column; } }
+  .profile-picture-box .baal {
+    flex: 2; }
   .profile-picture-box--input {
+    flex: 3;
     margin: 0 2rem; }
   .profile-picture-box--img {
     width: 100%; }
