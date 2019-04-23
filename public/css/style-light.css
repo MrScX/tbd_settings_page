@@ -255,6 +255,26 @@ body {
 .paral-title {
   color: #000; }
 
+.friend-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: #000;
+  border: 1px solid #00695c; }
+  .friend-card--round-img {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    margin-right: 1rem; }
+  .friend-card--left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+  .friend-card--delete {
+    color: crimson; }
+
 .hr-dark {
   background: #fcf5f5;
   color: #fcf5f5;
