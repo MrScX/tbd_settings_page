@@ -13,7 +13,7 @@ body{
     font-size: 1.6rem;
     color: $text-color;
 
-    background: #212328;
+    background: $body-bg;
 }
 
 ::-webkit-input-placeholder{ /* Chrome/Opera/Safari */

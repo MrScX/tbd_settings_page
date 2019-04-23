@@ -10,7 +10,7 @@ body {
   font-family: "Quicksand",sans-serif;
   font-size: 1.6rem;
   color: #c1cdd2;
-  background: #212328; }
+  background: #fff; }
 
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
@@ -276,7 +276,26 @@ body {
     .friend-card--left:hover {
       color: #039be5; }
   .friend-card--delete {
-    color: crimson; }
+    color: crimson;
+    position: relative;
+    display: inline-block; }
+    .friend-card--delete:hover {
+      z-index: 999; }
+      .friend-card--delete:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0; }
+    .friend-card--delete::after {
+      content: "";
+      background: crimson;
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all .5s; }
 
 .hr-dark {
   background: #fcf5f5;
