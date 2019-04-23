@@ -257,11 +257,10 @@ body {
 
 .friend-card {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   border-radius: 0.5rem;
-  color: #000;
   border: 1px solid #00695c; }
   .friend-card--round-img {
     height: 4rem;
@@ -271,7 +270,11 @@ body {
   .friend-card--left {
     display: flex;
     justify-content: flex-start;
-    align-items: center; }
+    align-items: center;
+    color: #000;
+    transition: all 0.3s; }
+    .friend-card--left:hover {
+      color: #039be5; }
   .friend-card--delete {
     color: crimson; }
 

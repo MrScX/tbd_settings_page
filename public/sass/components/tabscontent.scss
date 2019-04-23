@@ -82,13 +82,11 @@
 .friend-card{
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     border-radius: 0.5rem;
-    color: $title-text;
     border: 1px solid $teal;
-    margin-bottom: 1rem;
 
     &--round-img{
         height: 4rem;
@@ -101,6 +99,13 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
+
+        color: $title-text;
+        transition: all 0.3s;
+
+        &:hover{
+            color: $tabs-color;
+        }
     }
 
     &--delete{
